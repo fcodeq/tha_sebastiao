@@ -7,21 +7,28 @@
     <meta name="keyword"
         content="Fonoaudiologia, Canto, Voz, Profissional, Especialista" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.conditional.min.css" />
-    -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" >
     <link rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/pico-vars.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <!--
     <link rel="icon" type="image/x-icon" href="images/favicon32x32.ico" sizes="32x32" />
     -->
   </head>
   <body>
+    <nav>
+      <a href="mailto:changeme@example.com" aria-label="Enviar e-mail">
+        <img decoding="async"
+          src="images/icons/email_icon.svg" alt="Ícone de e-mail" />
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5511985277322&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consulta." aria-label="Enviar mensagem no WhatsApp">
+        <img decoding="async"
+          src="images/icons/whatsapp_icon.svg" alt="Ícone de WhatsApp" />
+      </a>
+      <a href="https://www.instagram.com/tha_sebastiao" aria-label="Acessar Instagram">
+        <img decoding="async"
+          src="images/icons/instagram_icon.svg" alt="Ícone de Instagram" />
+      </a>
+    </nav>
     <header id="hero">
       <div class="swiper" id="hero-carousel">
         <div class="swiper-wrapper">
@@ -48,7 +55,7 @@
       <div id="hero-darklay" aria-hidden="true"></div>
       <div id="hero-overlay">
         <div id="hero-content">
-          <h1>Fonoaudióloga Thaís Sebastião</h1>
+          <h1>Fonoaudióloga<br>Thaís Sebastião</h1>
           <p>
             Apaixone-se por sua voz e comunicação ✨
           </p>
@@ -62,7 +69,7 @@
     </header>
     <main>
       <section id="sobre" class="container">
-        <h1>Quem sou eu?</h1>
+        <h2>Quem sou eu?</h2>
         <p>
           Fonoaudióloga formada pela UNICAMP, especializada em voz e Coach
           Vocal pelo CEV - Centro de estudos da Voz. Mestre em Diagnóstico
@@ -70,73 +77,62 @@
         </p>
       </section>
       <section id="especialidades" class="container">
-        <h1>Áreas de Atuação</h1>
+        <h2>Áreas de Atuação</h2>
         <div class="row">
-          <div class="col-xs-12 col-sm-8 col-md-6">
-            <div id="esp1" class="box">
-              <figure>
-                <img src="images/samples/marek-studzinski-kT0nH5-zh5E-unsplash.svg" alt="Placeholder image">
-              </figure>
-              <h4>Especialidade 1</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                Semper vel class aptent taciti sociosqu ad litora.
-              </p>
-              <button id="esp1-btn">Saiba mais</button>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-8 col-md-6">
-            <div id="esp2" class="box">
-              <figure>
-                <img src="images/samples/prayag-aghara-z7vHb4bJjKk-unsplash.svg" alt="Placeholder image">
-              </figure>
-              <h4>Especialidade 2</h4>
-              <p>
-                Orci varius natoque penatibus et magnis dis parturient.
-                Finibus facilisis dapibus etiam interdum tortor ligula
-                congue.
-              </p>
-              <button id="esp2-btn">Saiba mais</button>
-            </div>
-          </div>
+          <article id="esp1">
+            <figure>
+              <img src="images/samples/marek-studzinski-kT0nH5-zh5E-unsplash.svg" alt="Placeholder image">
+            </figure>
+            <h3>Especialidade 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              Semper vel class aptent taciti sociosqu ad litora.
+            </p>
+            <button id="esp1-btn">Saiba mais</button>
+          </article>
+          <article id="esp2">
+            <figure>
+              <img src="images/samples/prayag-aghara-z7vHb4bJjKk-unsplash.svg" alt="Placeholder image">
+            </figure>
+            <h3>Especialidade 2</h3>
+            <p>
+              Orci varius natoque penatibus et magnis dis parturient.
+              Finibus facilisis dapibus etiam interdum tortor ligula
+              congue.
+            </p>
+            <button id="esp2-btn">Saiba mais</button>
+          </article>
+          <article id="esp3">
+            <figure>
+              <img src="images/samples/public-domain-vectors-r89sy28-C9w-unsplash.svg" alt="Placeholder image">
+            </figure>
+            <h3>Especialidade 3</h3>
+            <p>
+              Porta elementum a enim euismod quam justo lectus.
+              Curabitur facilisi cubilia curae hac habitasse platea
+              dictumst.
+            </p>
+            <button id="esp3-btn">Saiba mais</button>
+          </article>
+          <article id="esp4">
+            <figure>
+              <img src="images/samples/the-creative-idea--adNw9dAPN0-unsplash.svg" alt="Placeholder image">
+            </figure>
+            <h3>Especialidade 4</h3>
+            <p>
+              Adipiscing elit quisque faucibus ex sapien vitae
+              pellentesque. Ad litora torquent per conubia nostra
+              inceptos himenaeos.
+            </p>
+            <button id="esp4-btn">Saiba mais</button>
+          </article>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 col-md-6">
-            <div id="esp3" class="box">
-              <figure>
-                <img src="images/samples/public-domain-vectors-r89sy28-C9w-unsplash.svg" alt="Placeholder image">
-              </figure>
-              <h4>Especialidade 3</h4>
-              <p>
-                Porta elementum a enim euismod quam justo lectus.
-                Curabitur facilisi cubilia curae hac habitasse platea
-                dictumst.
-              </p>
-              <button id="esp3-btn">Saiba mais</button>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-8 col-md-6">
-            <div id="esp4" class="box">
-              <figure>
-                <img src="images/samples/the-creative-idea--adNw9dAPN0-unsplash.svg" alt="Placeholder image">
-              </figure>
-              <h4>Especialidade 4</h4>
-              <p>
-                Adipiscing elit quisque faucibus ex sapien vitae
-                pellentesque. Ad litora torquent per conubia nostra
-                inceptos himenaeos.
-              </p>
-              <button id="esp4-btn">Saiba mais</button>
-            </div>
-          </div>
-        </div>
-
         <!-- Here start modals -->
         <dialog closedby="any" id="esp1-dialog">
           <article>
             <header>
-              <button aria-label="Close" class="close-dialog" rel="prev">Close</button>
-              <p><strong>Especialidade 1</strong></p>
+              <button aria-label="Close" class="close-dialog" rel="prev"> </button>
+              <h3>Especialidade 1</h3>
             </header>
             <p>
               Curabitur mi posuere viverra mi fermentum etiam venenatis quis a, eu vel
@@ -150,8 +146,8 @@
         <dialog closedby="any" id="esp2-dialog">
           <article>
             <header>
-              <button aria-label="Close" class="close-dialog" rel="prev">Close</button>
-              <p><strong>Especialidade 2</strong></p>
+              <button aria-label="Close" class="close-dialog" rel="prev"> </button>
+              <h3>Especialidade 2</h3>
             </header>
             <p>
               Volutpat cras ad facilisis eget adipiscing quis etiam platea, sapien
@@ -165,8 +161,8 @@
         <dialog closedby="any" id="esp3-dialog">
           <article>
             <header>
-              <button aria-label="Close" class="close-dialog" rel="prev">Close</button>
-              <p><strong>Especialidade 3</strong></p>
+              <button aria-label="Close" class="close-dialog" rel="prev"> </button>
+              <h3>Especialidade 3</h3>
             </header>
             <p>
               Et sem nulla duis platea vivamus auctor litora sociosqu ac enim primis,
@@ -180,8 +176,8 @@
         <dialog closedby="any" id="esp4-dialog">
           <article>
             <header>
-              <button aria-label="Close" class="close-dialog" rel="prev">Close</button>
-              <p><strong>Especialidade 4</strong></p>
+              <button aria-label="Close" class="close-dialog" rel="prev"> </button>
+              <h3>Especialidade 4</h3>
             </header>
             <p>
               Consectetur platea torquent fringilla vivamus etiam pharetra proin
@@ -196,7 +192,7 @@
         <!-- Here ends modals -->
       </section>
       <section id="depoimentos" class="container">
-        <h1>Opinião dos pacientes</h1>
+        <h2>Opinião dos pacientes</h2>
         <div class="swiper" id="depoimentos-carousel">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -560,12 +556,12 @@
             </div>
           </div>
           <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
           <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
       <section id="fotos" class="container">
-        <h1>Galeria</h1>
+        <h2>Galeria</h2>
         <div class="swiper" id="fotos-carousel">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -626,6 +622,7 @@
         </div>
       </section>
       <section id="contato" class="container">
+        <h2>Contato</h2>
         <ul>
           <li>
             <a href="mailto:changeme@example.com">
@@ -655,20 +652,6 @@
       <p>&copy; 2025 Thais Fernandes Sebastião</p>
       <p>CRfa 2-21283</p>
     </footer>
-    <nav>
-      <a href="mailto:changeme@example.com" aria-label="Enviar e-mail">
-        <img decoding="async"
-          src="images/icons/email_icon.svg" alt="Ícone de e-mail" />
-      </a>
-      <a href="https://api.whatsapp.com/send?phone=5511985277322&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consulta." aria-label="Enviar mensagem no WhatsApp">
-        <img decoding="async"
-          src="images/icons/whatsapp_icon.svg" alt="Ícone de WhatsApp" />
-      </a>
-      <a href="https://www.instagram.com/tha_sebastiao" aria-label="Acessar Instagram">
-        <img decoding="async"
-          src="images/icons/instagram_icon.svg" alt="Ícone de Instagram" />
-      </a>
-    </nav>
   </body>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script>
@@ -730,7 +713,7 @@
       },
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        clickable: false,
       },
     });
 
