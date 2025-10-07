@@ -397,6 +397,45 @@ body>footer {
 #depoimentos .swiper-pagination {
   bottom: 20px;
 }
+#depoimentos .star-rating {
+  display: inline-block;
+  position: relative;
+}
+#depoimentos .star-rating::before {
+  content: "★★★★★";
+  color: #ccc;
+}
+#depoimentos .star-rating::after {
+  content: "★★★★★";
+  color: gold;
+  position: absolute;
+  overflow: hidden;
+  width: 0%;
+  left: 0;
+  right: 0;
+}
+#depoimentos .rating-05::after { width: 10%; }
+#depoimentos .rating-10::after { width: 20%; }
+#depoimentos .rating-15::after { width: 30%; }
+#depoimentos .rating-20::after { width: 40%; }
+#depoimentos .rating-25::after { width: 50%; }
+#depoimentos .rating-30::after { width: 60%; }
+#depoimentos .rating-35::after { width: 70%; }
+#depoimentos .rating-40::after { width: 80%; }
+#depoimentos .rating-45::after { width: 90%; }
+#depoimentos .rating-50::after { width: 100%; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
 #contato ul {
   margin-left: 1.5em;
   list-style-type: none;
