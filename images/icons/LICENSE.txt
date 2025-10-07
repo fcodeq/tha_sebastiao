@@ -1,13 +1,14 @@
 Pack Name: Social Media icon pack
 Description: 36 free vector (SVG) icons in Social media, Logos. Added on Oct 14th, 2019
 Publisher: Iconfinder
+Files Under This License: instagram_icon.svg, whatsapp_icon.svg
 License: Free for commercial use
 Location: https://www.iconfinder.com/iconsets/social-media-2285
 Archive: https://web.archive.org/web/20240917215815/https://www.iconfinder.com/iconsets/social-media-2285
 Accessed On: 2025-09-04 14:40:42 GMT-03
-Files Under This License: instagram_icon.svg, whatsapp_icon.svg
 
 ---
 
-License: Public Domain
+Author: Fernanda Coelho de Queiroz <fcodeq@vereda.tec.br>
 Files Under This License: email_icon.svg
+License: CC0 1.0 Universal
