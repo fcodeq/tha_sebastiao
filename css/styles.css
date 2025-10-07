@@ -118,7 +118,7 @@ p {
 
 button, a[role=button] {
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0.8em 1.6em;
   font-weight: 600;
   border-radius: 0.4em;
   cursor: pointer;
@@ -191,6 +191,7 @@ body>footer {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  min-height: 100dvh;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -210,6 +211,7 @@ body>footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  height: 100dvh;
   width: 100%;
 }
 
@@ -304,7 +306,7 @@ body>footer {
   width: 100%;
   --swiper-navigation-color: var(--ultra-violet);
   --swiper-theme-color: var(--cambridge-blue);
-  --swiper-navigation-size: 1.5em;
+  --swiper-navigation-size: 2em;
   --swiper-pagination-bullet-size: 0.5em;
 }
 
@@ -372,7 +374,9 @@ body>footer {
   bottom: 20px;
 }
 #contato ul {
+  margin-left: 2em;
   list-style-type: none;
+  font-size: 1.2em;
 }
 
 #contato a {
@@ -400,7 +404,7 @@ body>nav {
 
 body>nav a {
   background: var(--antiflash-white);
-  border-radius: 30%;
+  border-radius: 35%;
   display: inline-flex;
   height: 3em;
   width: 3em;
@@ -430,8 +434,10 @@ body>nav img {
   }
   #hero {
     min-height: calc(100vh - 4em);
+    min-height: calc(100dvh - 4em);
   }
   #hero-carousel .swiper-slide {
     height: calc(100vh - 4em);
+    height: calc(100dvh - 4em);
   }
 }
