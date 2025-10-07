@@ -7,8 +7,9 @@
     <meta name="keyword"
         content="Fonoaudiologia, Canto, Voz, Profissional, Especialista" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <link rel="preload" href="css/fonts/Vidaloka-Regular.otf" as="font" />
+    <link rel="preload" href="css/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     <link rel="stylesheet" href="css/styles.css" />
     <!--
     <link rel="icon" type="image/x-icon" href="images/favicon32x32.ico" sizes="32x32" />
@@ -16,15 +17,15 @@
   </head>
   <body>
     <nav>
-      <a href="mailto:changeme@example.com" aria-label="Enviar e-mail">
+      <a href="mailto:changeme@example.com" aria-label="Enviar e-mail para Thaís">
         <img decoding="async"
           src="images/icons/email_icon.svg" alt="Ícone de e-mail" />
       </a>
-      <a href="https://api.whatsapp.com/send?phone=5511985277322&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consulta." aria-label="Enviar mensagem no WhatsApp">
+      <a href="https://api.whatsapp.com/send?phone=5511985277322&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consulta." aria-label="Enviar mensagem de WhatsApp para Thaís">
         <img decoding="async"
           src="images/icons/whatsapp_icon.svg" alt="Ícone de WhatsApp" />
       </a>
-      <a href="https://www.instagram.com/tha_sebastiao" aria-label="Acessar Instagram">
+      <a href="https://www.instagram.com/tha_sebastiao" aria-label="Acessar perfil de Instagram de Thaís">
         <img decoding="async"
           src="images/icons/instagram_icon.svg" alt="Ícone de Instagram" />
       </a>
@@ -59,11 +60,11 @@
           <p>
             Apaixone-se por sua voz e comunicação ✨
           </p>
-          <a href="#contato" role="button" aria-label="Rolar para a seção de contato">
+          <a href="#contato" role="button" aria-label="Entre em contato">
             Entre em contato</a>
         </div>
       </div>
-      <a href="#sobre" aria-label="Rolar para a próxima seção" id="hero-scroll-wrapper">
+      <a href="#sobre" aria-label="Ir para a próxima seção" id="hero-scroll-wrapper">
         <div id="hero-scroll-indicator" aria-hidden="true"></div>
       </a>
     </header>
@@ -88,7 +89,7 @@
               Lorem ipsum dolor sit amet consectetur adipiscing elit.
               Semper vel class aptent taciti sociosqu ad litora.
             </p>
-            <button id="esp1-btn">Saiba mais</button>
+            <button id="esp1-btn" aria-label="Saiba mais sobre Especialidade 1">Saiba mais</button>
           </article>
           <article id="esp2">
             <figure>
@@ -100,7 +101,7 @@
               Finibus facilisis dapibus etiam interdum tortor ligula
               congue.
             </p>
-            <button id="esp2-btn">Saiba mais</button>
+            <button id="esp2-btn" aria-label="Saiba mais sobre Especialidade 2">Saiba mais</button>
           </article>
           <article id="esp3">
             <figure>
@@ -112,7 +113,7 @@
               Curabitur facilisi cubilia curae hac habitasse platea
               dictumst.
             </p>
-            <button id="esp3-btn">Saiba mais</button>
+            <button id="esp3-btn" aria-label="Saiba mais sobre Especialidade 3">Saiba mais</button>
           </article>
           <article id="esp4">
             <figure>
@@ -124,7 +125,7 @@
               pellentesque. Ad litora torquent per conubia nostra
               inceptos himenaeos.
             </p>
-            <button id="esp4-btn">Saiba mais</button>
+            <button id="esp4-btn" aria-label="Saiba mais sobre Especialidade 4">Saiba mais</button>
           </article>
         </div>
         <!-- Here start modals -->
@@ -191,6 +192,7 @@
         </dialog>
         <!-- Here ends modals -->
       </section>
+      <noscript><link rel="stylesheet" href="css/swiper-bundle.min.css" /></noscript>
       <section id="depoimentos" class="container">
         <h2>Opinião dos pacientes</h2>
         <div class="swiper" id="depoimentos-carousel">
@@ -588,7 +590,6 @@
       <p>CRfa 2-21283</p>
     </footer>
   </body>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script>
     /* Habilita popup "Saiba mais" na seção de Especialidades */
     const closeBtns = document.querySelectorAll(".close-dialog");
