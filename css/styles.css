@@ -95,15 +95,15 @@ h1, h2, h3 {
   margin-top: 0.5em;
 }
 h1 {
-  font-size: 3em;
+  font-size: 2.4em;
   line-height: 1.25;
 }
 h2 {
-  font-size: 1.8em;
+  font-size: 1.44em;
   line-height: 1.15;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 1.2em;
   line-height: 1.175;
 }
 p {
@@ -113,7 +113,21 @@ p {
   margin-top: 1em;
 }
 #hero p {
-  font-size: 1.8em;
+  font-size: 1.44em;
+}
+@media (min-height: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  #hero p {
+    font-size: 1.8em;
+  }
 }
 
 button, a[role=button] {
@@ -155,10 +169,20 @@ body>footer {
 #especialidades .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 #especialidades article {
-  flex: 1 10em;
+  flex: 1 1 10em;
   margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+#especialidades article>figure {
+  margin-left: auto;
+  margin-right: auto;
+}
+#especialidades article>button {
+  margin-top: auto;
 }
 
 #especialidades dialog {
